@@ -93,7 +93,7 @@ angular.module('starter')
 		};
 
 		CarroService.realizarLogin(dadosLogin).then(function(dados){
-			$state.go('listagem');
+			$state.go('app.listagem');
 		}, function(erro){
 			$ionicPopup.alert({
 				title: 'Erro de login',
