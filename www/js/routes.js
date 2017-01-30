@@ -13,6 +13,15 @@ $stateProvider
 	controller: 'MenuController'
 })
 
+.state('app.perfil', {
+	url: '/perfil',
+	views: {
+		'menuContent': {
+			templateUrl: 'templates/perfil.html'
+		}
+	}
+})
+
 .state('app.listagem',{
 	url : '/listagem',
 	views: {
