@@ -10,8 +10,17 @@
 	</ion-side-menu-content>
 
 	<ion-side-menu side="left">
+		<ion-header-bar class="bar bar-positive">
+			<h1 class="title">Dados pessoais</h1>
+		</ion-header-bar>
 		<ion-content>
-			ola
+			<div class="list card">
+				<div class="item item-avatar">
+					<h2> {{usuarioLogado.nome}} </h2>
+					<h3> {{usuarioLogado.email}} </h3>
+				</div>
+				<div class="item item-body"></div>
+			</div>
 		</ion-content>
 	</ion-side-menu>
 </ion-side-menus>

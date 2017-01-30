@@ -9,7 +9,8 @@ $stateProvider
 .state('app', {
 	url: '/app',
 	templateUrl: 'templates/menu.html',
-	abstract: true
+	abstract: true,
+	controller: 'MenuController'
 })
 
 .state('app.listagem',{
