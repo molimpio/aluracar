@@ -1,19 +1,19 @@
-<ion-view>
+<ion-view view-title="Perfil do Usuário">
 	<ion-content>
 		<div class="list card">
 			<div class="item item-avatar">
-				Usuario logado
+				<h2>{{usuarioLogado.nome}}</h2>
 			</div>
 			<div class="item item-body">
 				<div class="list">
 					<label class="item item-input">
-						<span class="input-label">Data de Nascimento</span>
+						<span class="input-label">{{usuarioLogado.dataNascimento}}</span>
 					</label>
 					<label class="item item-input">
-						<span class="input-label">Telefone</span>
+						<span class="input-label">{{usuarioLogado.telefone | brPhoneNumber}}</span>
 					</label>
 					<label class="item item-input">
-						<span class="input-label">Email</span>
+						<span class="input-label">{{usuarioLogado.email}}</span>
 					</label>
 					<button class="button button-full button-positive">Editar</button>
 				</div>

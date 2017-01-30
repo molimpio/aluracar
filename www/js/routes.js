@@ -17,7 +17,8 @@ $stateProvider
 	url: '/perfil',
 	views: {
 		'menuContent': {
-			templateUrl: 'templates/perfil.html'
+			templateUrl: 'templates/perfil.html',
+			controller: 'PerfilController'
 		}
 	}
 })
